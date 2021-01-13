@@ -1,0 +1,100 @@
+/*
+font-family: 'Cormorant Garamond', Serif;
+font-size: 55px;
+font-family: 'Fira Sans', Sans-Serif;
+font-size: 15px;
+*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Fira Sans', Sans-Serif;
+	font-size: 20px;
+	color: #666;
+	margin: 0;
+}
+header {
+	background-image: url(../images/sojourner-header.png);
+	background-size: cover;
+	width: 100vw;
+}
+header.grid-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+h1, h2 {
+	font-family: 'Cormorant Garamond', Serif;
+	color: rgba(255,255,255,.6);
+}
+
+h1 {
+	font-size: 90px;
+	margin: 0;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	padding: 20px 10px;
+}
+
+h2 {
+	font-size: 60px;
+	margin-top: 400px;
+	margin-right: 40px;
+	text-align: right;
+	
+}
+
+p {
+	line-height: 32px;
+}
+
+em { 
+	font-weight: bold; 
+}
+
+main {
+	width: 80%;
+	margin: 60px auto;
+}
+
+blockquote {
+	font-style:italic;
+	font-size: 48px;
+	font-family: 'Cormorant Garamond', Serif;
+	text-align: center;
+}
+blockquote::after {
+  content: "”";
+}
+
+blockquote::before {
+  content: "“";
+}
+
+blockquote em { font-weight: bold; color: #ff9900; font-size: 68px; }
+
+
+.grid-main {
+	display: flex;
+}
+
+.grid-main p {
+	margin:60px;
+}
+.grid-main p:nth-child(1) {
+	flex: 45%;
+}
+.grid-main p:nth-child(2) {
+	flex: 55%;
+}
+.intro span {
+	font-size: 60px; 
+	font-weight:bold;
+	font-family: 'Cormorant Garamond', Serif;
+}
+.first {
+	font-size: 32px;
+}
