@@ -1,0 +1,109 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  background-color: rgb(214, 221, 188);
+  
+}
+
+
+h1 {
+  color: white;
+  font-size: 44px;
+}
+
+.special {
+  text-align: center;
+  margin: 25px;
+  border-style: solid;
+  border-width: 5px;
+  padding: 100px;
+  font-size: 300%;
+  background-color: rgb(235, 252, 0);
+}
+
+
+
+
+
+
+.grid {
+  display: flex;
+}
+
+.grid div {
+  flex: 1;
+  height: 200px;
+  background-color: #cccccc;
+  margin: 20px;
+}
+
+.grid .one {
+  background-color: hsl(181, 100%, 50%);
+}
+
+.grid .two {
+  background-color: rgb(248, 36, 17);
+}
+
+.grid .three {
+  background-color: rgba(249, 23, 200, 0.75);
+}
+
+.grid .four {
+  background-color: deeppink;
+}
+
+.parent {
+  width: 80%;
+  margin: auto;
+  height: 600px;
+  position: relative;
+  border: 10px solid black;
+}
+
+.parent .one {
+  position: absolute;
+  top: 500;
+  left: 500;
+  background-color: rgba(28, 133, 153, 0.25);
+  width: 300px;
+  height: 300px;
+  font-size: 44px;
+  text-align: center;
+  padding: 100px;
+  
+  
+}
+
+.parent .two {
+  position: absolute;
+  top: 270px;
+  left: 190px;
+  color: rgba(243, 105, 63, 0.4);
+  
+}
+
+.parent .three {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(219, 174, 174, 0.30);
+  width: 300px;
+  height: 300px;
+}
+
+.parent .four {
+  position: right;
+  bottom: 100px;
+  left: 600px;
+  background-color: rgba(132, 243, 29, 0.5);
+  width: 300px;
+  height: 300px;
+  padding-left: 200px;
+}
