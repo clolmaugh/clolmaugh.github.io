@@ -240,6 +240,16 @@ a:focus {
     line-height: 1;
     font-family: 'CaviarDreams';
     padding-top: 20px;
+    left: 50%;
+    
+}
+
+.textbreakp {
+    position: absolute;
+    left: 50%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
     
 }
 
