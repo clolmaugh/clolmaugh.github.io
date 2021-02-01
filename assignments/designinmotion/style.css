@@ -1,0 +1,357 @@
+/* .flexbody {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+} */
+
+
+
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(caviardreamsfont/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.woff);
+  }
+
+#topNavLogo{
+    height: 4vh;
+    order: 0;
+        padding-right: 20px;
+    } 
+
+/* 
+    /* Basic menu styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+nav {
+    background: #222;
+    padding: 0 15px;
+    display: flex;
+    height: 10vh;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu {   
+    list-style-type: none;
+    
+}
+
+.item {
+    padding: 10px;
+    text-decoration: none;
+}
+.item.button {
+    padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    text-decoration: none;
+    color: #ccc;
+}
+ 
+
+  /* Desktop menu */
+@media all and (min-width: 10px) {
+    
+    #navbar {
+        display: flex;
+        /* align-items: center;   */
+        justify-content: space-between;
+    }
+    
+    .menu {
+        display: flex;
+        list-style: none;
+        /* flex-direction: row;   
+        justify-content: flex-end;
+        background: none; */
+        text-transform: uppercase;
+        align-items: center;
+        padding-top: 5px;
+        font-family: 'CaviarDreams';
+    }
+    .item {
+        display: flex;
+        justify-content: flex-end;
+        /* order: 1;
+        display: block; 
+        width: auto; */
+    }
+    /* .first{
+        padding-left: 50%;
+    } */
+
+    .button {
+        display: flex;
+        order: 2;
+        justify-content: flex-end;
+    }
+  
+    
+    .toggle {
+        display: none;
+    }
+    
+  
+  p {
+    transform: translate(-50%);
+    font-family: 'CaviarDreams';
+  }
+
+  .item a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .item a::after {
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .item a:hover::after {
+      height: calc(100% + 8px)
+  }
+
+ .hero {
+     padding-top: 25%;
+     padding-bottom: 30%;
+     
+ }
+
+
+  #videoSizeControl { 
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    z-index: -4;
+    
+    }
+
+
+a:focus {
+    color: white;
+    outline: none;
+    text-decoration: none;
+    }
+
+.twoPosters {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 3px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);  
+    
+}
+
+.tixBtn {
+    flex: 1 1 auto;
+
+    margin-top: 12px;
+    padding: 10px;
+    text-align: center;
+    /* align-items: center; */
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 100% auto;
+    color: white;
+   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 10px rgb(237, 181, 225);
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #F4A6D3 0%, #D60091 51%, #7285FF 100%);
+   }
+   .tixBtn a:hover {
+    text-decoration: none;
+   }
+
+   
+   .tixBtn:hover {
+    background-image: linear-gradient(to left, #F4A6D3 0%, #D60091 51%, #7285FF 100%);
+    
+  }
+
+ .headergif {
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    z-index: -4;
+    
+ }
+
+ .herotitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: honeydew;
+    font-family: 'CaviarDreams';
+    
+  }
+
+  .herotitleWD {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: honeydew;
+    font-family: 'CaviarDreams';
+    
+  }
+
+  .textbreak1 {
+    margin: auto;
+    width: 80%;
+    padding: 100px;
+
+  }
+
+  .tb1title {
+    background-image: url(https://media.giphy.com/media/7TzAeThpeQARsOMhHN/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1;
+    font-family: 'CaviarDreams';
+    padding-top: 20px;
+    
+}
+
+.p {
+    font-size: 20px;
+    line-height: .75;
+    
+    
+    
+}
+
+
+
+/* Footer */
+
+* {
+    box-sizing: border-box;
+    font-family: ’Lato’, sans-serif;
+    margin-top: 10px; 
+    padding: 0px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+a:hover {
+    text-decoration: none;
+}
+.ft-title {
+    color: #fff;
+    font-family: ’Lato’, sans-serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 77.5rem /*1240px*/ ) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    background-color: #b900d1;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
