@@ -4,13 +4,14 @@
     /* flex-direction: column; */
 }
 
+/* font-family: 'Raleway', sans-serif; */
 
 @font-face {
     font-family: CaviarDreams;
     src: url(caviardreamsfont/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.woff);
   }
 
-  /* font-family: 'Raleway', sans-serif; */
+
 
 
 
@@ -31,10 +32,10 @@
     margin: 0;
 } */
 
-body {
+/* body {
     font-family: CaviarDreams;
     font-size: 16px;
-}
+} */
 
 nav {
     background: #222;
@@ -140,11 +141,6 @@ a {
     }
     
   
-  p {
-    transform: translate(-50%);
-    /* font-family: 'Raleway', sans-serif; */
-
-  }
 
   .item a {
     display: block;
@@ -222,12 +218,12 @@ a {
     padding: 30px;
   }
   
-  .blue-column {
+  .column1 {
     background-color: blue;
     height: 500px;
   }
   
-  .green-column {
+  .column2 {
     background-color: green;
     height: 500px;
   }
@@ -247,16 +243,6 @@ a {
     padding-top: 0px;
   }
 
- /* .herotitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 100px;
-    color: honeydew;
-    font-family: 'CaviarDreams';
-    
-  } */
 
   .herotitleWD {
     position: relative;
@@ -267,6 +253,36 @@ a {
     color: honeydew;
     font-family: 'CaviarDreams';
   }
+
+  /* Gallery */
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+
+    .gallery div {
+    /* padding: 15px; */
+    margin-top: 20px;
+    }
+
+    img {
+    max-width: 100%;
+    
+
+    }
+    
+    .gallery div {
+    flex: 25%;
+    }
+
+    .news {
+      display: flex;
+      margin-bottom: 60px;
+    }
+
+
    
 
   /* Two Posters Section */
@@ -311,12 +327,10 @@ a {
 
 .textbreakp {
     position: absolute;
+    transform: translate(-50%);
     left: 50%;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif; */
-    font-size: 18px;
-    line-height: 1.25;
     
 }
 
@@ -324,7 +338,7 @@ a {
     font-size: 20px;
     line-height: .75;
     font-family: 'Raleway', sans-serif;
-    font-size: 22px;
+   
 
 }
 
@@ -350,7 +364,7 @@ a {
 
 * {
     box-sizing: border-box;
-    font-family: CaviarDreams;
+    font-family: 'Raleway', sans-serif;
     margin-top: 10px; 
     padding: 0px;
 }
@@ -372,7 +386,7 @@ a:hover {
 }
 .ft-title {
     color: #fff;
-    font-family: ’Lato’, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.375rem;
     padding-bottom: 0.625rem;
 }
@@ -500,7 +514,7 @@ var,
 b,
 u,
 i,
-center,
+/* center, */
 dl,
 dt,
 dd,
