@@ -14,6 +14,7 @@
 
 
 
+
   /* Nav Bar */
 
 .topNavLogo {
@@ -193,16 +194,60 @@ a {
     }
 
 
+  /* Page BG */
 
- .headergif {
+
+
+  .pg-content {
+    display: flex;
+    flex-wrap: wrap;
+    background: url("images/darkbgtexture.png");
+    display: inline-block;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .blue-column {
+    background-color: blue;
+    height: 500px;
+  }
+  
+  .green-column {
+    background-color: green;
+    height: 500px;
+  }
+   
+
+  .headerGif {
     width: 100%;
     position: absolute;
-    top: 10vh;
-    z-index: -4;
+    z-index: -1;
     
  }
 
- .herotitle {
+  .heroSlide {
+    width: 100vw;
+    height: 50vh;
+    margin-top: -20px;
+    padding-top: 0px;
+  }
+
+ /* .herotitle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -211,18 +256,18 @@ a {
     color: honeydew;
     font-family: 'CaviarDreams';
     
-  }
+  } */
 
   .herotitleWD {
-    position: absolute;
-    top: 50%;
-    left: 40%;
+    position: relative;
+    top: 30vh;
+    left: 60%;
     transform: translate(-50%, -50%);
-    font-size: 70px;
+    font-size: 7vw;
     color: honeydew;
     font-family: 'CaviarDreams';
-    
   }
+   
 
   /* Two Posters Section */
 
