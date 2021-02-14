@@ -330,9 +330,10 @@ a {
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 3px;
-    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 20px;
     padding-bottom: 30px;
     padding-top: 10px;
@@ -377,13 +378,18 @@ a {
 
 .eventartpic {
     display: flex;
-    /* margin-top: 100px; */
-    /* margin-bottom: 100px; */
-    /* padding-top: 50px; */
-    padding-bottom: -10px;
+    flex-wrap: wrap;
+    /* padding-bottom: -10px; */
     margin-left: 0%;
-    height: 837px;     
+    /* height: 837px;      */
 
+}
+
+.createbtmpic {
+  margin-top: -15px;
+  width: 100vw;
+  margin-bottom: -15px;
+  
 }
 
 /* Hover Box */
@@ -528,6 +534,9 @@ a {
     font-size: 5vw;
   }
 }
+
+/* Merch Styling */
+
 
 
 
