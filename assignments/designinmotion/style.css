@@ -33,6 +33,12 @@ h5 {
     font-family: CaviarDreams;
 }
 
+h6 {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
 hr {
   display: block;
   height: 1px;
@@ -371,10 +377,10 @@ a {
 
 .eventartpic {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+    /* padding-top: 50px; */
+    padding-bottom: -10px;
     margin-left: 0%;
     height: 837px;     
 
@@ -530,7 +536,6 @@ a {
 
 * {
     box-sizing: border-box;
-    /* font-family: 'Raleway', sans-serif; */
     margin-top: 10px; 
     padding: 0px;
 }
@@ -541,7 +546,7 @@ ul {
 footer {
     background-color: #555;
     color: #bbb;
-    line-height: 1.5;
+    line-height: 1.0;
 }
 footer a {
     text-decoration: none;
@@ -553,12 +558,13 @@ a:hover {
 .ft-title {
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     padding-bottom: 0.625rem;
+    padding-top: 10px;
 }
 
 .ft-main {
-    padding: 1.25rem 1.875rem;
+    /* padding: 1.25rem 1.875rem; */
     display: flex;
     width: 100vw;
     /* flex-wrap: wrap; */
@@ -686,7 +692,7 @@ dl,
 dt,
 dd,
 ol,
-ul,
+/* ul, */
 li,
 fieldset,
 form,
