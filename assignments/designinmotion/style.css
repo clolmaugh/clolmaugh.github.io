@@ -26,6 +26,7 @@ h2 {
   
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
+    line-height: 1.2;
     
 
 }
@@ -234,17 +235,38 @@ a {
     }
 
 
-  /* Page BG */
+  /* Page Content */
+
+  .daytitles {
+    background-image: url(https://media.giphy.com/media/7TzAeThpeQARsOMhHN/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1;
+    font-family: 'CaviarDreams';
+    padding-top: 10px;
+    padding-bottom: 20px;
+    left: 50%;
+    
+}
 
 
 
-  .pg-content {
+  .schpg-content {
     display: flex;
-    flex-wrap: wrap;
     background: url("images/darkbgtexture.png");
     display: inline-block;
     background-size: cover;
-    width: 100%;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    width: 100vw;
+    
   }
   
   .row {
@@ -260,15 +282,15 @@ a {
     flex-basis: 100%;
     flex: 1;
     padding: 30px;
+    
   }
   
   .column1 {
-    background-color: blue;
-    height: 500px;
+      height: 500px;
+
   }
   
   .column2 {
-    background-color: green;
     height: 500px;
   }
    
@@ -601,10 +623,21 @@ a {
 
   /* Event page Styling */
 
+  .eventartcontent {
+    display: flex;
+    background: url("images/darkbgtexture.png");
+    display: inline-block;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    padding-bottom: 100px;
+  }
+
   .eventflex-container {
     display: flex;
     flex-direction: row;
     margin-top: 150px;
+    
   }
   
   .eventflex-left {
