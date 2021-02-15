@@ -253,9 +253,27 @@ a {
     
 }
 
+/* Schedule Page */
+
+.schpg-content a {
+  border-bottom: 1px solid #81dcf3;
+  color: #f6f6f8;
+  padding-bottom: .25em;
+  text-decoration: none;
+}
+
+.schpg-content a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+  }
 
 
-  .schpg-content {
+.schpg-content {
     display: flex;
     background: url("images/darkbgtexture.png");
     display: inline-block;
@@ -266,6 +284,7 @@ a {
     padding-bottom: 100px;
     padding-left: 30px;
     width: 100vw;
+    
     
   }
   
@@ -623,14 +642,17 @@ a {
 
   /* Event page Styling */
 
+ 
+
   .eventartcontent {
     display: flex;
     background: url("images/darkbgtexture.png");
     display: inline-block;
     background-size: cover;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-bottom: -50px;
     padding-bottom: 100px;
+    width: 100vw;
   }
 
   .eventflex-container {
@@ -645,12 +667,12 @@ a {
     height: 200px;
     /* margin: 5px; */
     margin-left: 150px;
-    padding-top: 90px;
+    padding-top: 50px;
     /* border: 2px solid red; */
   }
   
   .eventflex-right {
-    width: 28%;
+    width: 40%;
     /* margin: 5px; */
     margin-right: 150px;
     /* padding: -20px; */
