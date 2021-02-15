@@ -70,20 +70,9 @@ hr {
     padding-left: 10px;
     } 
 
-/* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-} */
-
-/* body {
-    font-family: CaviarDreams;
-    font-size: 16px;
-} */
 
 nav {
     background: #222;
-    /* padding: 0 15px; */
     display: flex;
     height: 10vh;
 }
@@ -119,18 +108,12 @@ a {
     
     #navbar {
         display: flex;
-        /* align-items: center;   */
         justify-content: space-between;
-        /* top: 0px; */
-        
     }
     
     .menu {
         display: flex;
         list-style: none;
-        /* flex-direction: row;   
-        justify-content: flex-end;
-        background: none; */
         text-transform: uppercase;
         align-items: center;
         padding-top: 5px;
@@ -140,15 +123,9 @@ a {
     .item {
         display: flex;
         justify-content: flex-end;
-        /* order: 1;
-        display: block; 
-        width: auto; */
+        
     }
-    /* .first{
-        padding-left: 50%;
-    } */
-
-    /* Buy Tickets Btn */
+    
 
     .tixBtn {
         display: flex;
@@ -165,7 +142,6 @@ a {
         transition: 0.5s;
         background-size: 100% auto;
         color: white;
-       /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
         box-shadow: 0 0 10px rgb(237, 181, 225);
         border-radius: 10px;
         background-image: linear-gradient(to right, #F4A6D3 0%, #D60091 51%, #7285FF 100%);
@@ -344,7 +320,6 @@ a {
   .gallery {
     display: flex;
     flex-wrap: wrap;
-    /* margin-bottom: 50px; */
 
     }
 
@@ -380,7 +355,6 @@ a {
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
-    /* width: 100vw; */
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
@@ -438,9 +412,7 @@ a {
 .eventartpic {
     display: flex;
     flex-wrap: wrap;
-    /* padding-bottom: -10px; */
     margin-left: 0%;
-    /* height: 837px;      */
 
 }
 
@@ -461,7 +433,6 @@ a {
   justify-content: space-around;  
   grid-gap: 1.5%;
   padding: 120px 5%;
-  /* Kev added on the 22/09*/
   max-width:1330px;
   margin:0 auto;
 }
@@ -471,7 +442,6 @@ a {
   overflow: hidden;
   display: flex;
   flex: 25%;
-  /* Kev changed height on the 22/09: */
   height: 30vw;
   max-height:380px;
   border-radius: 5px;
@@ -600,8 +570,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  /* background-image: ; */
-  /* margin-bottom: 50px; */
+
 
   }
 
@@ -629,7 +598,7 @@ a {
     margin: 5px;
     margin-left: 150px;
     padding-top: 90px;
-    /* border: 2px solid red; */
+    
   }
   
   .merchflex-right {
@@ -686,7 +655,6 @@ a {
     background: url("images/darkbgtexture.png");
     display: inline-block;
     background-size: cover;
-    /* margin-top: 100px; */
     margin-bottom: -50px;
     padding-bottom: 100px;
     width: 100vw;
@@ -702,17 +670,14 @@ a {
   .eventflex-left {
     width: 50%;
     height: 200px;
-    /* margin: 5px; */
     margin-left: 150px;
     padding-top: 50px;
-    /* border: 2px solid red; */
+  
   }
   
   .eventflex-right {
     width: 40%;
-    /* margin: 5px; */
     margin-right: 150px;
-    /* padding: -20px; */
   
   }
 
@@ -752,7 +717,7 @@ a:hover {
     /* padding: 1.25rem 1.875rem; */
     display: flex;
     width: 100vw;
-    /* flex-wrap: wrap; */
+  
     
 }
 .ft-main-item {
