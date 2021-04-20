@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "assignments"
+		},
+		{
+			"path": "olume"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "olume"
+	}
+}
