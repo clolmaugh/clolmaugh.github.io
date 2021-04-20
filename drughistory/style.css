@@ -1,3 +1,32 @@
+html,body
+{
+    overflow-x: hidden; 
+}
+
+/* Fonts */
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  /* Hero Banner */
+
+  .hero {
+    padding-top: 25%;
+    padding-bottom: 30%;
+}
+
+
+ .videoSizeControl { 
+   width: 100vw;
+   position: absolute;
+   top: 10vh;
+   z-index: -4;
+   
+   }
+
+
 /* Splash Pg */
 
 .splashbody {
@@ -14,6 +43,16 @@
     z-index: -1;
  }
 
+ .cinemapic
+ /* width: 100vw; */
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+ }
+
 .splashlogo {
     position: absolute;
     top: 45%;
@@ -22,11 +61,205 @@
     height: 26vh;
   }
 
-/* .enterbtn {
+.introtext {
+    /* width: 1500px; */
+    height: 90vh;
+    position: absolute;
+    animation-name: textrise;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes textrise {
+    0%   {left:17%; top:90px; opacity: 0%;}
+    100% {left:17%; top:60px; opacity: 100%;}
+  }
+
+/* Buttons */
+
+
+.enterbtn {
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 15vh;
     margin-top: 5px;
-  } */
+  }
+  @import "compass/css3";
+
+
+.nxtbtn {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    background: rgb(232, 213, 10);
+	border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 20px;
+	height: 200px;
+    width: 100px;
+    margin-left: 90%;
+    
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        }
+    
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        }
+    
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+
+    .nxtbtntext {
+        text-align: center;
+        display:table-cell;
+        vertical-align:middle; 
+    }
+
+
+  /* MEYER RESET */
+
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+/* div, */
+span,
+applet,
+object,
+iframe,
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a, */
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+/* img, */
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+/* center, */
+dl,
+dt,
+dd,
+ol,
+/* ul, */
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+/* footer, */
+/* header, */
+hgroup,
+/* menu, */
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+/* nav, */
+/* section {
+  display: block;
+} */
+body {
+  line-height: 1;
+}
+/* ol,
+ul {
+  list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
