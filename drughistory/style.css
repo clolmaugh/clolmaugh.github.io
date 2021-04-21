@@ -100,13 +100,15 @@ h4 {
 	border-radius: 50%;
     margin-right: 15px;
     margin-top: 20px;
-	height: 200px;
+    margin-bottom: 20px;
+	height: 100px;
     width: 100px;
     margin-left: 90%;
     
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
-	animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    animation-delay: 13s;
 }
 
 @keyframes pulse {
@@ -131,6 +133,10 @@ h4 {
         display:table-cell;
         vertical-align:middle; 
     }
+
+    .nxtbtn:hover {
+        background: rgb(237, 237, 233);
+      }
 
 
   /* MEYER RESET */

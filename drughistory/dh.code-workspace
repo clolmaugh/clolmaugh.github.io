@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../DES342/DES342"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "drughistory"
+	}
+}
