@@ -104,27 +104,39 @@ h4 {
 	height: 100px;
     width: 100px;
     margin-left: 90%;
-    
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
-    animation: pulse 2s infinite;
-    animation-delay: 13s;
+  -webkit-animation: fadeIn 3s, pulse 2s infinite;
+  -webkit-animation-delay: 13s, 15s;
+    opacity: 0;
+  }
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
 }
 
 @keyframes pulse {
         0% {
             transform: scale(0.95);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            opacity: 1;
         }
     
         70% {
             transform: scale(1);
             box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            opacity: 1;
         }
     
         100% {
             transform: scale(0.95);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            opacity: 1;
         }
     }
 
