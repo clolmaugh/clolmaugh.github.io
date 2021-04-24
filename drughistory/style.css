@@ -5,6 +5,16 @@ html,body
 
 /* Fonts */
 
+@font-face {
+  font-family: 'Grunge Font';
+  src: url('fonts/GrungeFont-Regular.woff2') format('woff2'),
+      url('fonts/GrungeFont-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 h4 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -30,7 +40,7 @@ h4 {
 /* Splash Pg */
 
 .splashbody {
-    /* background-color: rgb(26, 33, 36); */
+    background-color: rgb(0, 0, 0);
 }
 
 .splashvid {
@@ -81,14 +91,52 @@ h4 {
 /* Buttons */
 
 
-.enterbtn {
+/* .enterbtn {
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 15vh;
     margin-top: 5px;
+    opacity: 0;
+    -webkit-animation: fadeIn 3s, sustain 3s infinite;
+    -webkit-animation-delay: 7s, 10s;
   }
+
+
+  @keyframes sustain {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+#hdg-1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Grunge Font';
+  font-weight: 400;
+  font-size: 10rem;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  outline: none;
+  backface-visibility: hidden;
+  opacity: 0;
+  -webkit-animation: fadeIn 3s, sustain 3s infinite;
+  -webkit-animation-delay: 7s, 10s;
+  
+  /*filter: url(#glitch-0);*/
+}
+
+  
+
   @import "compass/css3";
 
 

@@ -6,6 +6,7 @@
     <title>Anti-Drug History</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
    
 
@@ -14,11 +15,49 @@
 
 <body class="splashbody"> 
 
-    <div class="cinemapic">
-        <img src="photosnvids/cinema.jpeg">
-        <a href="introvid.html" class="enterbtn"> <img src="photosnvids/enterbtn.png" alt="enter button" class="splashButton"></a> -->
+    <div class="splashbg">
+        <video autoplay muted class="splashvid">
+            <source src="photosnvids/paperintro.mp4" type="video/mp4">
+        </video>  
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="glitch-0">
+                <feTurbulence in="SourceGraphic"
+                              type="fractalNoise"
+                              baseFrequency="0 0.01"
+                              numOctaves="1"
+                              seed="0"
+                              result="noise" />
+          
+                <feColorMatrix in="noise"
+                               color-interpolation-filters="sRGB"
+                               type="saturate"
+                               values="-99"
+                               result="mat-sat" />
+          
+                <feColorMatrix in="mat-sat"
+                               color-interpolation-filters="sRGB"
+                               type="matrix"
+                               values="1 0 0 0 0
+                                       0 0 0 0 0
+                                       0 0 0 0 0
+                                       0 0 0 1 0"
+                               result="mat-red"/>
+          
+                <feDisplacementMap in="SourceGraphic"
+                                   in2="mat-red"
+                                   xChannelSelector="R"
+                                   yChannelSelector="G"
+                                   scale="30" />
+              </filter>
+            </defs>
+          </svg>
+          
+          <h1 id="hdg-1" contenteditable spellcheck="false">ENTER</h1>
+        <!-- <a href="introvid.html" class="enterbtn"> <img src="photosnvids/enterbtn.png" alt="enter button"></a> -->
     </div>
-
+    
+   
 
 
 </body>
