@@ -16,7 +16,8 @@ html,body
 
 
 h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Grunge Font';
+    font-size: 4vh;
 }
 
 
@@ -136,18 +137,39 @@ h4 {
     justify-content: center;  
     align-items: center;  
     background: rgb(232, 213, 10);
-	border-radius: 50%;
+	  border-radius: 50%;
     margin-right: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
-	height: 100px;
+	  height: 100px;
     width: 100px;
     margin-left: 90%;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-  -webkit-animation: fadeIn 3s, pulse 2s infinite;
-  -webkit-animation-delay: 13s, 15s;
+	  transform: scale(1);
+    -webkit-animation: fadeIn 3s, pulse 2s infinite;
+    -webkit-animation-delay: 13s, 15s;
     opacity: 0;
+  }
+
+  .scrollbtn {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    background: rgb(232, 213, 10);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 35vh;
+    margin-bottom: 55vh;
+    margin-left: 40vw;
+	  height: 150px;
+    width: 150px;
+    padding: 3vw;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	  transform: scale(1);
+    -webkit-animation: fadeIn 3s, pulse 2s infinite;
+    -webkit-animation-delay: 9s, 10s;
+    opacity: 0;
+    font-family: 'Grunge Font';
   }
 
 @keyframes fadeIn {
