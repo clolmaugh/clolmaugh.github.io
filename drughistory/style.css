@@ -58,7 +58,7 @@ h4 {
   /* width: 100vw; */
   display:flex;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   position: absolute;
   z-index: -1;
@@ -300,6 +300,78 @@ h4 {
     a:active {
         text-decoration: none;
       }
+
+      /* Decade Pages */
+
+    /* .hideme {
+      display:flex;
+      justify-content: center;
+      /* height: 100vh; */
+      /* width: 100vw;
+      position: relative;
+      z-index: -1;
+      opacity:0; */
+      /* margin: 1px;
+      padding-top: 1px; */
+    /* } 
+
+    /* #monster {
+      display:flex;
+      justify-content: center;
+      /* height: 100vh; */
+      /* width: 100vw;
+      position: relative;
+      z-index: -1;
+      margin-top: -30vh;
+    }  */
+
+    .decadebg {
+      background-color: black;
+    }
+
+    .fullHeight {
+      display: flex
+      justify-content: center;
+      width: 100vw;
+      position: relative;
+      z-index: -1;
+    }
+
+    .fullHeighttop {
+      display: flex
+      justify-content: center;
+      margin-top: -30vh;
+      width: 100vw;
+      position: relative;
+      z-index: -1;
+    }
+    
+    .tag {
+      opacity: 0;
+      transform: translate(0, 10vh);
+      transition: all 3s;
+    }
+    
+    .tag.visible {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+
+    /* #scrollcontainer
+    {
+        height:1000vh;    
+    }
+    
+    #scrollcontainer DIV
+    { 
+        margin:0px; 
+        padding:0px;  */
+       
+    /* } */
+    
+   
+
 
 
   /* MEYER RESET */
