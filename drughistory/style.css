@@ -150,14 +150,24 @@ h4 {
 }
 
 /* Add a color to the active/current link */
-.activedec {
+.topnav a.activedec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffea02;
+  height: 100%;
+  /* padding: 0; */
+  color:black;
+}
+
+/* .activedec {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffea02;
   height: 100%;
   padding: 0;
-}
+} */
 
 /* Buttons */
 
@@ -225,19 +235,20 @@ h4 {
     display: flex;  
     justify-content: center;  
     align-items: center;  
-    position: absolute;
+    position: absolute; 
+    top: 35vh;
     background: rgb(232, 213, 10);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     margin-top: 0; 
     /* margin-bottom: 55vh; */ 
     margin-left: 40vw;
-	  height: 150px;
-    width: 150px;
+	  height: 100px;
+    width: 100px;
     padding: 3vw;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgb(215, 214, 189);
 	  transform: scale(1);
-    -webkit-animation: pulse 2s infinite;
+    -webkit-animation: decpulse 2s infinite;
     opacity: 0;
     z-index: 1;
   
@@ -293,6 +304,26 @@ h4 {
         }
     }
 
+    @keyframes decpulse {
+      0% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(246, 247, 241, 0.7);
+          opacity: 1;
+      }
+  
+      70% {
+          transform: scale(1);
+          box-shadow: 0 0 0 10px rgba(246, 247, 241, 0.7);
+          opacity: 1;
+      }
+  
+      100% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(246, 247, 241, 0.7);
+          opacity: 1;
+      }
+  }
+
     .nxtbtntext {
         text-align: center;
         display:table-cell;
@@ -302,6 +333,11 @@ h4 {
     }
 
     .nxtbtn:hover {
+        background: rgb(237, 237, 233);
+        cursor: pointer;
+      }
+
+    .nxtdecbtn:hover {
         background: rgb(237, 237, 233);
         cursor: pointer;
       }
@@ -349,7 +385,7 @@ h4 {
     .fullHeighttop {
       display: flex
       justify-content: center;
-      margin-top: -30vh;
+      margin-top: -20vh;
       width: 100vw;
       position: relative;
       z-index: -1;
@@ -357,8 +393,8 @@ h4 {
     
     .tag {
       opacity: 0;
-      transform: translate(0, 10vh);
-      transition: all 4s;
+      transform: translate(0, 5vh);
+      transition: all 3s;
     }
     
     .tag.visible {
