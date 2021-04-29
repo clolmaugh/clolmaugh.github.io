@@ -521,10 +521,21 @@ h4 {
       align-items: center;  
       position: absolute; 
       /* top: 35vh; */
-      width: 60vw;
-      left: 20%;
-      top: 15%;
+      width: 80vw;
+      left: 8vw;
+      top: 5vh;
       
+    }
+
+    .substrip {
+      display: flex;
+      justify-content: center;  
+      align-items: center;  
+      position: absolute; 
+      /* top: 35vh; */
+      width: 30vw;
+      left: 34%;
+      top: 57%;
     }
     
    
