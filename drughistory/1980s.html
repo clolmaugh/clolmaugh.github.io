@@ -12,17 +12,26 @@
 
 <body class="splashbody">
 
-    <audio autoplay loop>
-        <!-- <source src="horse.ogg" type="audio/ogg"> -->
-        <source src="decadeaudio/80saudio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
     <div class="splashbg">
-            <video autoplay muted class="decvid">
-                <source src="photosnvids/1980s.mp4" type="video/mp4">
-            </video>  
-    </div>
+           
+        <div id="audio-control">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+      
+          <div id="backgroundaudio">
+            <i class="icon-volume-up"></i>
+            <audio autoplay hidden loop id="audio">
+              <source src="decadeaudio/80saudio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>  
+          
+          <video autoplay muted class="decvid">
+            <source src="photosnvids/1900s.mp4" type="video/mp4">
+        </video> 
+</div>
         
 
         <div class="scrollbtn">
@@ -30,17 +39,17 @@
         </div>
   
         <div class="topnav">
-            <img src="photosnvids/TITLE STRIP.png" class="topNavLogo">
-            <a href="1900s.html">1900</a>
-            <a href="1920s.html">1920</a>
-            <a href="1930s.html">1930</a>
-            <a href="1940s.html">1940</a>
-            <a href="1950s.html">1950</a>
-            <a href="1960s.html">1960</a>
-            <a href="1970s.html">1970</a>
+            <a href="home.html"><img src="photosnvids/TITLE STRIP.png" class="topNavLogo"></a>
+            <a class="anchor" href="1900s.html">1900</a>
+            <a class="anchor" href="1920s.html">1920</a>
+            <a class="anchor" href="1930s.html">1930</a>
+            <a class="anchor" href="1940s.html">1940</a>
+            <a class="anchor" href="1950s.html">1950</a>
+            <a class="anchor" href="1960s.html">1960</a>
+            <a class="anchor" href="1970s.html">1970</a>
             <a class="activedec" href="1980s.html">1980</a>
-            <a href="1990s.html">1990</a>
-            <a href="2000s.html">2000+</a>
+            <a class="anchor" href="1990s.html">1990</a>
+            <a class="anchor" href="2000s.html">2000+</a>
           </div>
 
           <div class="fullHeighttop tag">    

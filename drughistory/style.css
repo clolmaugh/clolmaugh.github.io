@@ -15,6 +15,11 @@ html,body
 }
 
 
+h1 {
+  font-family: 'Grunge Font';
+  font-size: 30vh;
+}
+
 h4 {
     font-family: 'Grunge Font';
     font-size: 4vh;
@@ -36,6 +41,100 @@ h4 {
    z-index: -4;
    
    }
+
+  /*audio Controller------*/
+
+#audio-control {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgb(247, 227, 9);
+}
+
+#audio-control:hover {
+  box-shadow: 0 0 20px 0 rgb(255, 255, 255);
+}
+
+#audio-control span.bar {
+  display: inline-block;
+  position: absolute;
+  left: 22px;
+  bottom: 18px;
+  width: 2px;
+  height: 5px;
+  background: rgb(247, 227, 9);
+  transition: all 0.25s ease-in;
+  animation: barMotion 0.3s ease-out infinite;
+}
+
+#audio-control span.bar:nth-child(2) {
+  left: 28px;
+  animation-direction: reverse;
+}
+
+#audio-control span.bar:nth-child(3) {
+  left: 34px;
+  animation-direction: alternate-reverse;
+}
+
+#audio-control.noVolume span.bar {
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  animation: none;
+}
+
+#backgroundaudio {
+  display: block;
+  position: fixed;
+  bottom: -43px;
+  left: 5px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#backgroundaudio:hover {
+  bottom: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  }
+
+#backgroundaudio audio {
+  background: #ffffff;
+  padding: 5px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 43px;
+  z-index: 9998;
+}
+
+#backgroundaudio i {
+  font-size: 40px;
+  display: block;
+  background: #ffffff;
+  padding: 5px;
+  width: 50px;
+  float: none;
+  margin-bottom: -1px;
+  z-index: 9999;
+}
+
+@keyframes barMotion {
+  100% {
+      height: 25px;
+  }
+}
 
 
 /* Splash Pg */
@@ -133,7 +232,7 @@ h4 {
     cursor: pointer;
     } 
 
-.topnav a {
+.topnav .anchor {
   display: flex;
   color: #f2f2f2;
   align-items: center;
@@ -148,13 +247,13 @@ h4 {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav .anchor:hover {
   background-color: #ddd;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.activedec {
+.topnav .anchor.activedec {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +276,7 @@ h4 {
 
 
 
-#hdg-1 {
+.enterbtn {
   color: rgb(0, 0, 0);
   /* text-align: center; */
   font-family: 'Grunge Font';
@@ -196,10 +295,18 @@ h4 {
   -webkit-animation: fadeIn 3s, sustain 3s infinite;
   -webkit-animation-delay: 7s, 10s;
   
-  /*filter: url(#glitch-0);*/
 }
 
-#hdg-1:active {
+.enterbtn:hover {
+  background: url(https://media.giphy.com/media/AdBzpdcXxDqvu/giphy.gif) no-repeat;
+  background-width: 50vw;
+  /* background-scale: 3; */
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.enterbtn:active {
   color: yellow;
 }
 

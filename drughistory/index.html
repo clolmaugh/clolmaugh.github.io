@@ -17,42 +17,8 @@
         <video autoplay muted class="splashvid">
             <source src="photosnvids/paperintro.mp4" type="video/mp4">
         </video>  
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-              <filter id="glitch-0">
-                <feTurbulence in="SourceGraphic"
-                              type="fractalNoise"
-                              baseFrequency="0 0.01"
-                              numOctaves="1"
-                              seed="0"
-                              result="noise" />
-          
-                <feColorMatrix in="noise"
-                               color-interpolation-filters="sRGB"
-                               type="saturate"
-                               values="-99"
-                               result="mat-sat" />
-          
-                <feColorMatrix in="mat-sat"
-                               color-interpolation-filters="sRGB"
-                               type="matrix"
-                               values="1 0 0 0 0
-                                       0 0 0 0 0
-                                       0 0 0 0 0
-                                       0 0 0 1 0"
-                               result="mat-red"/>
-          
-                <feDisplacementMap in="SourceGraphic"
-                                   in2="mat-red"
-                                   xChannelSelector="R"
-                                   yChannelSelector="G"
-                                   scale="30" />
-              </filter>
-            </defs>
-          </svg>
-          
-          <a href="introvid.html" class="enterbtn"> <img src="photosnvids/enterbtn.png" alt="enter button"><h1 id="hdg-1" contenteditable spellcheck="false">ENTER</h1></html></a>
-        <!-- <a href="introvid.html" class="enterbtn"> <img src="photosnvids/enterbtn.png" alt="enter button"></a> -->
+
+          <a href="introvid.html" h1 class="enterbtn">ENTER</a></h1></a>
     </div>
     
    
