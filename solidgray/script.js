@@ -31,3 +31,5 @@ function change4(){
 function change5(){
     document.getElementById('pic').src='assets/RED_bold-red-1-600x673.jpeg';
 }
+
+

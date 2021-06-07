@@ -235,6 +235,84 @@ width: 100vh;
   margin-bottom: 100px;
 }
 
+/* Product Gallery */
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+html {
+    height: 100vh;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    background: linear-gradient( #fff, #fefefe, #eaeaea);
+}
+.accordion {
+    max-width: 990px;
+    background: rgba(0, 0, 0, 0.10);
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.box {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    background-position: left;
+    background-size: cover;
+    transition: .7s;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.box:hover{
+    flex: 7;
+    height: 400px;
+}
+.a1 {
+    background-image: url("assets/solid-gray-hardshell-backpack-picture-grid_A01-600x673.jpeg");
+}
+.a2 {
+    background-image: url("assets/solid-gray_hardshell-backpack_mate-red_lifestyle_B00-600x673.jpeg")
+}
+.a3 {
+    background-image: url("assets/whiteconcretelifestyle.png");
+    color: #fff;
+}
+.a4 {
+    background-image: url("assets/lifestylestickerpacks.png");
+    color: #fff;
+}
+.a5 {
+    background-image: url("assets/girlwalllifestyle.png"); 
+}
+
+/* .box:hover .text{
+    opacity:1;
+} */
+
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+    }
+    .accordion {
+        flex-direction: column;
+        height: 700px;
+        box-shadow: none;
+    }
+    .box {
+        box-shadow: none;
+    }
+    .box:hover {
+        flex: 7;
+    }
+}
+
+
+
   /* MEYER RESET */
 
 /* /* http://meyerweb.com/eric/tools/css/reset/ 
