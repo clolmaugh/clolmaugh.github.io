@@ -133,6 +133,7 @@ width: 100vh;
 
 .bannertext {
   display: flex;
+  align-items: center;
   margin-top: 5vh;
   margin-left: 50%;
   margin-right: 10%;
