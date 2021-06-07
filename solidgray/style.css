@@ -128,8 +128,13 @@ width: 100vh;
 
 .sec3{
   color: #ffffff;
-  width: 100vw;
-  margin-right: 0%;
+}
+
+.polymertitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 
 /* Packs Page */
