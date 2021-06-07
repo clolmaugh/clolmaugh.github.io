@@ -136,6 +136,7 @@ width: 100vh;
   margin-top: 5vh;
   margin-left: 50%;
   margin-right: 10%;
+  padding-right: 2%;
 }
 
 .globeicon {
@@ -144,18 +145,24 @@ width: 100vh;
   padding: 2%;
 }
 
-.viewport {
-  margin-top: 15%;
-}
-
-.swatches {
-  margin-left: 50%;
-  margin-top: 30%;
-}
 
 .productpg {
   display:flex;
+  flex: 1;
+  margin-top: 10%;
 }
+
+
+.productL {
+  /* flex: 1; */
+  /* border: 2px solid yellow; */
+  margin-right: 0%;
+}  
+
+.productR {
+  margin-right: 15%;
+  margin-top: 5%;
+} 
 
 
   /* MEYER RESET */
