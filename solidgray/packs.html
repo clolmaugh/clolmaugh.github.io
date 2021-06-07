@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/92138657f4.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -23,7 +24,6 @@
           <a class="contact" href="index.html">HOME</a>
           <a class="contact" href="packs.html">PACKS</a>
           <a class="contact" href="about.html">ABOUT</a>
-          <a class="contact" href="cart.html">CART</a>
     </div>      
   </div>
   
@@ -38,47 +38,6 @@
       <h3>LIFETIME CRASH SERVICE</h3>
   </div>
 
-<!-- Product Gallery / Info -->
-  
-  <style>
-   
-    #btn1{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #000000;
-
-    }
-    #btn2{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #2da7e9;
-
-    }
-    #btn3{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #3d3d3d ;
-
-    }
-    #btn4{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #ededed  ;
-
-    }
-    #btn5{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #c93033   ;
-
-    }
-
-</style>
 
 <section class="productpg">
 
@@ -93,46 +52,23 @@
         <button  id="btn3" onclick="change3()"></button>
         <button id="btn4" onclick="change4()"></button>
         <button  id="btn5" onclick="change5()"></button>
+        <br><br><br><br>
+        <div>
+            <div class="flexContainer">
+                <button id="cartButton" onclick="clickCartButton()">Add to cart</button><span id="price"> Price: $50</span>
+            </div>
+            <div id="outputArea1">
+                Total in cart: 0
+            </div>
+            <div id="outputArea2">
+                Total cost: 0
+            </div>
+        </div>
+        
+        
     </div>
 
-</section>
-
-<script>
-function change1()
-{
-
-document.getElementById('pic').src="assets/BLACK_bold-red-1-600x673.jpeg";
-
-}
-
-function change2()
-{
-
-document.getElementById('pic').src="assets/BLUE-lava_2-600x673.jpeg";
-
-}
-
-function change3()
-{
-
-document.getElementById('pic').src='assets/GRAY_bold-red-1-600x673.jpeg';
-
-}
-
-function change4()
-{
-
-document.getElementById('pic').src='assets/WHITE-lava-2-600x673.jpeg';
-
-}
-function change5()
-{
-
-document.getElementById('pic').src='assets/RED_bold-red-1-600x673.jpeg';
-
-}
-
-
-</script>
+ </section> 
+   
 </body>
 </html>
