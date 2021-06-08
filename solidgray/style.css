@@ -130,11 +130,36 @@ width: 100vh;
   color: #ffffff;
 }
 
+.sec4 { 
+  width: 100vw;
+}
+
+.sec5 {
+  width: 100vw;
+}
+
 .polymertitle {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+}
+
+/* About Pg */
+
+.aboutpg {
+  display: flex;  
+  width: 100vw;
+  z-index: -1;
+  position: relative;
+  margin-right: 0;
+  margin-top: 0;
+}
+.centertext {
+  position: absolute;
+  z-index: 1;
+  width: 30vw;
+
 }
 
 /* Packs Page */
@@ -146,7 +171,7 @@ width: 100vh;
 .bannertext {
   display: flex;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 2vh;
   margin-left: 50%;
   margin-right: 10%;
   padding-right: 2%;
